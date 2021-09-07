@@ -18,6 +18,10 @@ body {
     font-weight: 600;
 }
 
+p {
+    font-size: 14px;
+}
+
 main {
     background-color: $Light-grayish-cyan;
     display: flex;
@@ -28,9 +32,9 @@ main {
 
 
     #logo {
-        height: 3em;
+        height: 3.4em;
         display: flex;
-        margin: 2em  0em;
+        margin: 3em  0em;
     }
 }
 
@@ -48,79 +52,96 @@ main {
 .content {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin-top: 1.5em;
-    
+    width: 95%;
+    margin-top: 1em;
+    align-items: center;
     padding: 1.3em;
 }
 
 /*------------------USER INPUT-----------------*/
 
 .user-input {
+    width: 100%;
     
     p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .input-number {
-      display: flex;  
+      display: flex; 
       align-items: center;
       justify-content: space-between;
       background-color: $Light-grayish-cyan2;
       border-radius: 3px;
       padding: 6px;
+      margin-top: 5px;
+
+        img {
+            margin-left: 10px;
+        }
     }
 
     input {
-        width: 80px;
+        width: 100%;
         background-color: transparent;
         border-style: none;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 700;
-        color: hsl(183, 100%, 19%);
+        color: $Very-dark-cyan;
+        padding-left: 180px;
+        
     }
 
     ::placeholder {
-        color: hsl(183, 100%, 19%);
+        color: $Very-dark-cyan;
         opacity: 1;
-        padding-left: 10px;
     }
 }
 
 /*------------------BUTTONS------------------*/
 
 .buttons {
-    margin-top: 2em;
+    margin-top: 2.2em;
 
     p {
+        font-size: 15px;
         margin-bottom: 0.7em;
     }
 
     .buttons-grid{
+        padding-top: 0.4em;
         display: grid;
         grid-template-columns: 47% 47%;
         grid-template-rows: 33% 33% 33%;
         column-gap: 1em;
-        row-gap: 0.5em;
+        row-gap: 0.6em;
         justify-content: center;
     }
 
     .btn-tip{
         align-items: center;
-        height: 2.2em;
-        border-radius: 4px;
+        height: 2em;
+        border-radius: 5px;
         border-style: none;
         background-color: $Very-dark-cyan;
         color: $White;
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 24px;
         transition: 0.3s;
+
+            span{
+                font-weight: 500;
+            }
+
+            .pressed {
+                font-weight: 700;
+            }
     }
 
     .tip_pressed{
         background-color: $Strong-cyan;
         color: $Very-dark-cyan;
-        font-weight: 600;
+        font-weight: 700;
     }
 
 
@@ -136,19 +157,99 @@ main {
         border-style: none;
         color: $Dark-grayish-cyan;
         padding-left: 50px;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
     }
 
     #custom::placeholder{
         color: $Dark-grayish-cyan;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
     }
 }
 
+/*------------NUMBER OF PEOPLE------------------*/
+
 #div-people{
+    margin-top: 2.5em;
+
+    #person::placeholder {
+        padding-left: 55px;
+    }
+
+}
+
+/*---------------RESULTS--------------------------*/
+
+#results {
+    background-color: $Very-dark-cyan;
+    color: $White;
+    width: 105%;
+    padding: 2em 1.5em;
     margin-top: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+
+        .total-description {
+            font-size: 16px;
+            color: $White;
+        }
+
+        span {
+            font-size: 13px;
+            color: $Dark-grayish-cyan2;
+        }
+
+        p {
+            font-size: 30px;
+            color: $Strong-cyan;
+        }
+    }
+
+    .total-last {
+        margin-top: 1.5em;
+    }
+
+
+    .btn-reset {
+        align-items: center;
+        margin-top: 1.3em;
+        height: 2.4em;
+        border-radius: 5px;
+        border-style: none;
+        background-color: $Strong-cyan;
+        color: $Very-dark-cyan;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+}
+
+/*----------ATRIBUTION------------------*/
+
+.attribution {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    opacity: 0.9;
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        opacity: 0;
+        font-size: 8px;
+    }
 }
 
 

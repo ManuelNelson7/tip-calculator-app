@@ -37,11 +37,11 @@
           <p>Select Tip %</p>
 
           <div class="buttons-grid">
-            <button class="btn-tip" id="5per">5%</button>
-            <button class="btn-tip" id="10per">10%</button>
-            <button class="btn-tip tip_pressed" id="15per">15%</button>
-            <button class="btn-tip" id="25per">25%</button>
-            <button class="btn-tip" id="50per">50%</button>
+            <button class="btn-tip" id="5per">5<span>%</span></button>
+            <button class="btn-tip" id="10per">10<span>%</span></button>
+            <button class="btn-tip tip_pressed" id="15per">15<span class="pressed">%</span></button>
+            <button class="btn-tip" id="25per">25<span>%</span></button>
+            <button class="btn-tip" id="50per">50<span>%</span></button>
             <button class="btn-tip last"><input type="number" id="custom" placeholder="Custom"></button>
           </div>
         </div>
@@ -50,29 +50,29 @@
           <p>Number of people</p>
           <div class="input-number">
             <img src="./images/icon-person.svg" alt="Person symbol" class="symbol">
-            <input type="number" placeholder="55" id="Person-input">
+            <input id="person" type="number" placeholder="5" id="Person-input">
           </div>
         </div>
 
-        <div class="results">
+        <div id="results">
 
-          <div class="total-tip">
+          <div class="total">
             <div class="total-title">
-              <p>Tip Amount</p>
+              <p class="total-description">Tip Amount</p>
               <span>/ person</span>
             </div>
             <p id="tip-person">$4.27</p>
           </div>
 
-          <div class="total-person">
+          <div class="total total-last">
             <div class="total-title">
-              <p>Total</p>
+              <p class="total-description">Total</p>
               <span>/ person</span>
             </div>
             <p id="tip-person">$32.79</p>
           </div>
 
-          <button id="reset">Reset</button>
+          <button class="btn-reset" id="reset">Reset</button>
 
         </div>
       </div>
@@ -80,8 +80,8 @@
   </main>
  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Manuel Nelson</a>.
+    Challenge by <p>.</p> <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+    Coded by <p>.</p><a href="https://github.com/ManuelNelson7" target="_blank"> Manuel Nelson</a>.
   </div>
 </body>
 </html>

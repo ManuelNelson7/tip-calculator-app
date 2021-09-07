@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  color: #5e7a7d;
+  font-weight: 600;
+}
+
+main {
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+main #logo {
+  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em  0em;
+}
+
+/*----------------CARD--------------------------------*/
+.card {
+  background-color: white;
+  width: 100%;
+  height: 84vh;
+  border-radius: 20px 20px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin-top: 1.5em;
+  padding: 1.3em;
+}
+
+/*------------------USER INPUT-----------------*/
+.user-input p {
+  font-size: 14px;
+}
+
+.user-input .input-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f4fafa;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+.user-input input {
+  width: 80px;
+  background-color: transparent;
+  border-style: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #005c61;
+}
+
+.user-input ::-webkit-input-placeholder {
+  color: #005c61;
+  opacity: 1;
+  padding-left: 10px;
+}
+
+.user-input :-ms-input-placeholder {
+  color: #005c61;
+  opacity: 1;
+  padding-left: 10px;
+}
+
+.user-input ::-ms-input-placeholder {
+  color: #005c61;
+  opacity: 1;
+  padding-left: 10px;
+}
+
+.user-input ::placeholder {
+  color: #005c61;
+  opacity: 1;
+  padding-left: 10px;
+}
+
+/*------------------BUTTONS------------------*/
+.buttons {
+  margin-top: 2em;
+}
+
+.buttons p {
+  margin-bottom: 0.7em;
+}
+
+.buttons .buttons-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  -ms-grid-rows: 33% 33% 33%;
+      grid-template-rows: 33% 33% 33%;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 0.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons .btn-tip {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.2em;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #00494d;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.buttons .tip_pressed {
+  background-color: #26c0ab;
+  color: #00494d;
+  font-weight: 600;
+}
+
+.buttons .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f4fafa;
+}
+
+.buttons #custom {
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  color: #5e7a7d;
+  padding-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttons #custom::-webkit-input-placeholder {
+  color: #5e7a7d;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttons #custom:-ms-input-placeholder {
+  color: #5e7a7d;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttons #custom::-ms-input-placeholder {
+  color: #5e7a7d;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttons #custom::placeholder {
+  color: #5e7a7d;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#div-people {
+  margin-top: 2em;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 const bill = document.getElementById('bill-input');
 const btnTips = document.querySelectorAll('.btn-tip');
-const tipCustom = document.getElementById('custom');
+const custom = document.getElementById('custom');
 const people = document.getElementById('person');
 const errorMsg = document.querySelector('.error-msg');
 const results = document.querySelectorAll('.t-value');
@@ -11,7 +11,7 @@ bill.addEventListener('input', setBillValue);
 btnTips.forEach(btn => {
     btn.addEventListener('click', handleClick);
 });
-tipCustom.addEventListener('nput', setTipCustomValue);
+custom.addEventListener('input', setcustomValue);
 people.addEventListener('input', setPeopleValue);
 resetBtn.addEventListener('click', reset);
 
@@ -54,24 +54,24 @@ function handleClick(event){
         }
     });
 
-    tipCustom.value = '';
+    custom.value = '';
 
     calculateTip();
 
 }
 
-function setTipCustomValue(){
-    if(!validateInt(tipCustom.value)){
-        tipCustom.value = tipCustom.value.substring(0, tipCustom.value.length-1);
+function setcustomValue(){
+    if(!validateInt(custom.value)){
+        custom.value = custom.value.substring(0, custom.value.length-1);
     }
     
-    tipValue = parseFloat(tipCustom.value/100);
+    tipValue = parseFloat(custom.value/100);
 
     btnTips.forEach(btn => {
         btn.classList.remove('tip_pressed');
     });
 
-    if(tipCustom.value !== ''){
+    if(custom.value !== ''){
         calculateTip();
     }
     
@@ -83,6 +83,13 @@ function setPeopleValue(){
     }
 
     peopleValue = parseFloat(people.value);
+
+    if(peopleValue <= 0){
+        errorMsg.classList.add('show-error-msg');
+        setTimeout(function(){
+            errorMsg.classList.remove('show-error-msg');
+        }, 3000);
+    }
 
     calculateTip();
 }

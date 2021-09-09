@@ -368,8 +368,8 @@ main #logo {
     display: -ms-grid;
     display: grid;
     padding: 2em 1em 2em 1em;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
     row-gap: 0em;
@@ -416,7 +416,7 @@ main #logo {
         -ms-flex-align: start;
             align-items: flex-start;
     height: 2em;
-    width: 110px;
+    width: 130px;
     border-radius: 5px;
     border-style: none;
     background-color: #00494d;
@@ -519,7 +519,7 @@ main #logo {
   }
   /*------------------USER INPUT-----------------*/
   .user-input {
-    width: 80%;
+    width: 78%;
   }
   .user-input p {
     font-size: 15px;
@@ -571,7 +571,7 @@ main #logo {
   #results {
     background-color: #00494d;
     color: white;
-    width: 103%;
+    width: 80%;
     height: 105%;
     padding: 3em 2.5em 1.5em 2.5em;
     margin-top: 2em;

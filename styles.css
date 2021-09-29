@@ -592,7 +592,7 @@ main #logo {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 7em;
-    height: 2.4em;
+    height: 48px;
     border-radius: 5px;
     border-style: none;
     background-color: #26c0ab;

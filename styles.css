@@ -327,7 +327,7 @@ main #logo {
 }
 
 /*------------------MEDIA-----------------------*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   main {
     background-color: #c5e4e7;
     display: -webkit-box;
@@ -354,47 +354,75 @@ main #logo {
     margin: 0em  0em 5em 0em;
   }
   .card {
-    width: 64%;
+    width: 920px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 500px;
+    height: 45%;
     border-radius: 22px;
   }
   .content {
-    display: -ms-grid;
-    display: grid;
-    padding: 2em 1em 2em 1em;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-    row-gap: 0em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2em;
+    width: 98%;
+    height: 90%;
   }
-  .content #bill-input {
+  .content #box1 {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (8em)[3];
+        grid-template-columns: repeat(3, 8em);
+    -ms-grid-rows: (auto auto)[auto];
+        grid-template-rows: repeat(auto auto auto);
+    row-gap: 2em;
+    width: 65%;
+    height: 100%;
+  }
+  .content #box1 .user-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     margin-top: 0;
-  }
-  .content .buttons {
-    margin-top: 2.2em;
+    margin-bottom: 0;
     width: 100%;
+    padding: 0;
   }
-  .content .buttons p {
+  .content #box1 .buttons {
+    margin-top: 0;
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin-bottom: 0;
+  }
+  .content #box1 .buttons p {
     font-size: 15px;
-    margin-bottom: 0.7em;
+    margin-bottom: 0em;
     width: 100%;
   }
-  .content .buttons-grid {
+  .content #box1 .buttons-grid {
     display: -ms-grid;
     display: grid;
     -webkit-box-align: start;
@@ -404,19 +432,21 @@ main #logo {
         -ms-flex-pack: start;
             justify-content: start;
     width: 100%;
-    -ms-grid-columns: auto auto 1fr;
-        grid-template-columns: auto auto 1fr;
-    row-gap: 1.2em;
-    -webkit-column-gap: 1em;
-            column-gap: 1em;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    -webkit-column-gap: 0.75em;
+            column-gap: 0.75em;
+    row-gap: 1em;
     margin: 0;
   }
-  .content .buttons-grid .btn-tip {
+  .content #box1 .buttons-grid .btn-tip {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     height: 2em;
-    width: 130px;
+    width: 5em;
     border-radius: 5px;
     border-style: none;
     background-color: #00494d;
@@ -426,22 +456,22 @@ main #logo {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-  .content .buttons-grid .btn-tip span {
+  .content #box1 .buttons-grid .btn-tip span {
     font-weight: 500;
   }
-  .content .buttons-grid .btn-tip .pressed {
+  .content #box1 .buttons-grid .btn-tip .pressed {
     font-weight: 700;
   }
-  .content .buttons-grid .btn-tip:hover {
+  .content #box1 .buttons-grid .btn-tip:hover {
     background-color: #c5e4e7;
     color: #00494d;
   }
-  .content .buttons-grid .tip_pressed {
+  .content #box1 .buttons-grid .tip_pressed {
     background-color: #26c0ab;
     color: #00494d;
     font-weight: 700;
   }
-  .content .buttons-grid .last {
+  .content #box1 .buttons-grid .last {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -450,10 +480,10 @@ main #logo {
             align-items: center;
     background-color: #f4fafa;
   }
-  .content .buttons-grid .last:hover {
+  .content #box1 .buttons-grid .last:hover {
     background-color: #f4fafa;
   }
-  .content .buttons-grid #custom {
+  .content #box1 .buttons-grid #custom {
     width: 100%;
     background-color: transparent;
     border-style: none;
@@ -472,42 +502,42 @@ main #logo {
     padding-left: 0;
     font-weight: 600;
   }
-  .content .buttons-grid #custom::-webkit-input-placeholder {
+  .content #box1 .buttons-grid #custom::-webkit-input-placeholder {
     color: #5e7a7d;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
   }
-  .content .buttons-grid #custom:-ms-input-placeholder {
+  .content #box1 .buttons-grid #custom:-ms-input-placeholder {
     color: #5e7a7d;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
   }
-  .content .buttons-grid #custom::-ms-input-placeholder {
+  .content #box1 .buttons-grid #custom::-ms-input-placeholder {
     color: #5e7a7d;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
   }
-  .content .buttons-grid #custom::placeholder {
+  .content #box1 .buttons-grid #custom::placeholder {
     color: #5e7a7d;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
   }
-  .content #div-people {
+  .content #box1 #div-people {
     display: -ms-grid;
     display: grid;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     margin-top: 0;
   }
-  .content #results {
+  .content #box1 #results {
     display: -ms-grid;
     display: grid;
     -ms-grid-column: 2;
@@ -517,56 +547,6 @@ main #logo {
     -ms-grid-row-span: 3;
     grid-row: 1/4;
   }
-  /*------------------USER INPUT-----------------*/
-  .user-input {
-    width: 78%;
-  }
-  .user-input p {
-    font-size: 15px;
-  }
-  .user-input .input-number {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: #f4fafa;
-    border-radius: 3px;
-    padding: 6px;
-    margin-top: 5px;
-  }
-  .user-input .input-number img {
-    margin-left: 10px;
-  }
-  .user-input input {
-    width: 100%;
-    background-color: transparent;
-    border-style: none;
-    font-size: 24px;
-    font-weight: 700;
-    color: #00494d;
-    text-align: right;
-  }
-  .user-input ::-webkit-input-placeholder {
-    color: #00494d;
-    opacity: 1;
-  }
-  .user-input :-ms-input-placeholder {
-    color: #00494d;
-    opacity: 1;
-  }
-  .user-input ::-ms-input-placeholder {
-    color: #00494d;
-    opacity: 1;
-  }
-  .user-input ::placeholder {
-    color: #00494d;
-    opacity: 1;
-  }
   /*---------------RESULTS--------------------------*/
   #results {
     background-color: #00494d;
@@ -574,7 +554,7 @@ main #logo {
     width: 80%;
     height: 105%;
     padding: 3em 2.5em 1.5em 2.5em;
-    margin-top: 2em;
+    margin-top: 0;
     border-radius: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -611,7 +591,7 @@ main #logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 6em;
+    margin-top: 7em;
     height: 2.4em;
     border-radius: 5px;
     border-style: none;

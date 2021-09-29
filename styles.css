@@ -361,7 +361,7 @@ main #logo {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 45%;
+    height: 48%;
     border-radius: 22px;
   }
   .content {
@@ -374,7 +374,7 @@ main #logo {
             flex-direction: row;
     gap: 2em;
     width: 98%;
-    height: 90%;
+    height: 95%;
   }
   .content #box1 {
     display: -ms-grid;

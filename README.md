@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tip-calculator-app-manuel-nelson-R2_t3jnxn)
-- Live Site URL: [Add live site URL here](https://tip-calculator-manuel.netlify.app/)
+- [Solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-manuel-nelson-R2_t3jnxn)
+- [Live Site URL](https://tip-calculator-manuel.netlify.app/)
 
 ## My process
 
@@ -34,7 +34,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Manuel Nelson](https://www.linkedin.com/in/manuelnelson7/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ManuelNelson7)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Linkedin - [Manuel Nelson](https://www.linkedin.com/in/manuelnelson7/)
+- Frontend Mentor - [@ManuelNelson7](https://www.frontendmentor.io/profile/ManuelNelson7)
 
